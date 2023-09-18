@@ -27,7 +27,7 @@ create_adoptopenjdk_url() {
   local version="${1:-11}"
   local impl="${2:-openj9}"
   local release="${3:-latest}"
-  echo "https://api.adoptium.net/v2/binary/nightly/openjdk${version}?openjdk_impl=${impl}&os=linux&arch=x64&heap_size=normal&release=${release}&type=jdk"
+  echo "https://api.adoptium.net/v3/binary/latest/${version}/ga/linux/x64/jdk/hotspot/normal/eclipse?project=jdk"
 }
 
 install_adoptopenjdk() {
